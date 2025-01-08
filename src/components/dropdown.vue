@@ -23,7 +23,7 @@
         <menu-items
           as="ul"
           :class="menuClass"
-          class="max-h-[400px] overflow-auto inset-[0px_auto_auto_0px] rounded-[.46rem] px-6 py-3 absolute bg-white z-[107] min-w-[200px] shadow-[0px_0px_50px_0px_rgba(82,63,105,0.15)]"
+          class="max-h-[400px] overflow-auto inset-[0px_auto_auto_0px] rounded-[.46rem] px-5 py-3 absolute bg-white z-[107] min-w-[200px] shadow-[0px_0px_50px_0px_rgba(82,63,105,0.15)]"
         >
           <!-- start of menu item -->
           <menu-item
