@@ -1,24 +1,28 @@
 /* fallback */
 @font-face {
-  font-family: 'Material Icons Two Tone';
+  font-family: "Material Icons Two Tone";
   font-style: normal;
   font-weight: 400;
-  src: url('./icons.woff2') format('woff2');
+  src: url("./icons.woff2") format("woff2");
 }
 body {
-  --google-font-color-materialiconstwotone:none;
+  --google-font-color-materialiconstwotone: none;
 }
 
 .material-icons-two-tone {
-  font-family: 'Material Icons Two Tone';
+  font-family: "Material Icons Two Tone";
   font-style: normal;
   text-transform: none;
-  -webkit-font-feature-settings: 'liga';
-  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+  color: currentColor;
   background: linear-gradient(45deg, currentColor, currentColor);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: currentColor;
   line-height: 20px !important;
+  text-rendering: optimizeLegibility;
+  display: inline-block;
+  overflow: hidden;
 }
