@@ -4,7 +4,9 @@
     
     <!-- start of menu button -->
     <menu-button :class="buttonClass">
-      <slot name="button">Dropdown</slot>
+      <slot name="button">
+        <base-button variant="primary" text="dropdown" right-icon="language"/>
+      </slot>
     </menu-button>
     <!-- end of Menu button -->
 
@@ -68,10 +70,11 @@
 
 <script>
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
+import baseButton from "@/components/button.vue";
 export default {
   // Added name to avoid multi name error
   name: "dropdownMenu",
-  components: { Menu, MenuButton, MenuItems, MenuItem },
+  components: { Menu, MenuButton, MenuItems, MenuItem, baseButton },
   props: {
     // Add class to the menu
     dropdownClass: String,
