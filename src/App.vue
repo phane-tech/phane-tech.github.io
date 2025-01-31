@@ -1,5 +1,14 @@
 <template>
   <div class="max-w-7xl mx-auto p-4 gap-4 flex flex-wrap">
+    <dropdown
+      :items="[
+        { label: 'phaneendra', icon: 'fingerprint', class: 'text-green-500' },
+        // { label: 'mokshitha', icon: 'settings', class: 'text-yellow-500' },
+        { label: 'narasimha', icon: 'home', class: 'text-sky-500' },
+        { label: 'dhanalakshmi', icon: 'language', class: 'text-orange-500' },
+        { label: 'Naga Vani', class: 'text-red-500', icon: 'schedule' },
+      ]"
+    />
     <base-button
       @click="show = true"
       text="Open Sidebar"
@@ -16,15 +25,6 @@
       @click="show = true"
       text="Open Sidebar"
       icon="restaurant_menu"
-    />
-    <dropdown
-      :items="[
-        { label: 'phaneendra', icon: 'fingerprint', class: 'text-green-500' },
-        // { label: 'mokshitha', icon: 'settings', class: 'text-yellow-500' },
-        { label: 'narasimha', icon: 'home', class: 'text-sky-500' },
-        { label: 'dhanalakshmi', icon: 'language', class: 'text-orange-500' },
-        { label: 'Naga Vani', class: 'text-red-500', icon: 'schedule' },
-      ]"
     />
     <sidebar :show="show" :size="380" @close="show = false" />
   </div>
@@ -45,7 +45,7 @@ export default {
           icon: "done_all",
           toast: "success",
           item:{
-            title:"Success Toast title",
+            title:"Success Toast Title",
             text:'Notification component with a clean slate to build off of, style and position.'
           }
         },
@@ -54,7 +54,7 @@ export default {
           icon: "error",
           toast: "error",
           item:{
-            title:"Error Toast title",
+            title:"Error Toast Title",
             text:'Notification component with a clean slate to build off of, style and position.'
           }
         },
@@ -63,7 +63,7 @@ export default {
           icon: "warning",
           toast: "warning",
           item:{
-            title:"Warning Toast title",
+            title:"Warning Toast Title",
             text:'Notification component with a clean slate to build off of, style and position.'
           }
         },
@@ -72,7 +72,7 @@ export default {
           icon: "info",
           toast: "info",
           item:{
-            title:"Information Toast title",
+            title:"Information Toast Title",
             text:'Notification component with a clean slate to build off of, style and position.'
           }
         },

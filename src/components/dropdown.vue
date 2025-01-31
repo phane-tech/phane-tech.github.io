@@ -5,7 +5,7 @@
     <!-- start of menu button -->
     <menu-button :class="buttonClass">
       <slot name="button">
-        <base-button variant="primary" text="dropdown" right-icon="language"/>
+        <base-button variant="primary" text="My Family" right-icon="language"/>
       </slot>
     </menu-button>
     <!-- end of Menu button -->
